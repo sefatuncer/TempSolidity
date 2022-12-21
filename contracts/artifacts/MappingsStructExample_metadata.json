@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "balanceReceived",
 				"outputs": [
 					{
@@ -20,14 +26,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getContractBalance",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,7 +39,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "withdrawAll",
+				"name": "sendMoney",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawAllMoney",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -49,11 +61,16 @@
 				"inputs": [
 					{
 						"internalType": "address payable",
-						"name": "to",
+						"name": "_to",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
 					}
 				],
-				"name": "withdrawToAddress",
+				"name": "withdrawMoney",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -72,7 +89,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SendMoneyExample.sol": "SendWithDrawMoney"
+			"contracts/MappingStructExample.sol": "MappingsStructExample"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +103,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SendMoneyExample.sol": {
-			"keccak256": "0x75943607d1e52b3c58258f815f2b9db73d736ca5b9094b4d991922b6d6617d8c",
+		"contracts/MappingStructExample.sol": {
+			"keccak256": "0xfd2941beee45430bee5617f6e580d0c156fabbcd74f7a3201f51dee14fef7021",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ee76ef2f7c9fdcd95737df4b2cab4f4ce17044420010969d878cdd721478a305",
-				"dweb:/ipfs/QmVg2A7wzTx3KZrEVdQ4eo17xBL4Hrzi4bi8WuC48gocCD"
+				"bzz-raw://03db494df2a4d881b68de7eca922df3eff8336606f3311897775cddfe56cc75b",
+				"dweb:/ipfs/QmdTppiDaGv85nW8JkVdV6CenkLgEmU8rrUiXP1f1YLkkm"
 			]
 		}
 	},
