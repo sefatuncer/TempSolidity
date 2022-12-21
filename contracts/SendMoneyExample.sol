@@ -22,4 +22,6 @@ contract SendWithDrawMoney{
     function withdrawToAddress(address payable to) public {
         to.transfer(getContractBalance());
     }
+
+    // to github
 }
