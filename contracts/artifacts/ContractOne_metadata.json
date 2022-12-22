@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressBalances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ExampleContractCall.sol": "ContractOne"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ExampleContractCall.sol": {
+			"keccak256": "0x961a536ea772dd1d7ce889348d02228b1afedae7762bd244b9f9bf37058e28c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://de252be7a8a59e04521ff7e3ee29d444cce5bf50369edede31015792005e09e5",
+				"dweb:/ipfs/QmW1e5YtDpb4HZ7agoGuMFYttjwMkGwDHt7TnwVjQ3qwTb"
+			]
+		}
+	},
+	"version": 1
+}
