@@ -6,6 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractOne",
+						"type": "address"
+					}
+				],
+				"name": "depositOnContractOne",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -38,11 +51,11 @@
 	},
 	"sources": {
 		"contracts/ExampleContractCall.sol": {
-			"keccak256": "0x961a536ea772dd1d7ce889348d02228b1afedae7762bd244b9f9bf37058e28c5",
+			"keccak256": "0xd5f8bedca2f27b5c9ce7dacefa79123eb6c38f9db42a1ee8084af61a2ed8a0c6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de252be7a8a59e04521ff7e3ee29d444cce5bf50369edede31015792005e09e5",
-				"dweb:/ipfs/QmW1e5YtDpb4HZ7agoGuMFYttjwMkGwDHt7TnwVjQ3qwTb"
+				"bzz-raw://fdb4d0b746d9ede6f62b08e3419bdc304ca37cfedfb780dd0e2417ae30be55f9",
+				"dweb:/ipfs/Qma1dFitjbeg8W2s5WdE7NMRV37Zp4y617S3KAru4gU1av"
 			]
 		}
 	},

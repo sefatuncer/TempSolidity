@@ -8,10 +8,21 @@ contract ContractOne {
     function deposit() public payable{
         addressBalances[msg.sender] += msg.value;
     }
+
+    receive() external payable{
+        deposit();
+    }
 }
 
 contract ContractTwo {
     receive() external payable {}
 
-    function deposit
+    function depositOnContractOne(address _contractOne) public {
+        //ContractOne one = ContractOne(_contractOne);
+        //one.deposit{value:10, gas:100000}();
+
+        //bytes memory payload = abi.encodeWithSignature("deposit()");
+        (bool success, ) = _contractOne.call{value:10, gas:100000}("");
+        require(success);
+    }
 }
